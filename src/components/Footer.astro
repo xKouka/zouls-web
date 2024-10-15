@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+import imageBlanquito from "../images/blanqito.png";
+import imageIg from  '../images/instagram.svg'
+import imageYt from  '../images/youtube.svg'
+import imageFc from  '../images/facebook.svg'
+---
+<footer>
+    <div class="flex flex-row justify-center items-center m-9 gap-5">
+        <Image src={imageBlanquito} alt="blanquito" class="size-14 "/>
+        <div class="flex flex-column w-px h-12 bg-white"></div>
+        <span>ZoulsGaming</span>
+    </div>
+
+    <div class="flex flex-row justify-center gap-16 m-9">
+        <a href="">Inicio</a>
+        <a href="">Plantilla</a>
+        <a href="">Eventos</a>
+        <a href="">Contacto</a>
+    </div>
+    <div class="flex flex-row  justify-around w-auto m-9">
+        <div class="">
+            <span>Dev. Oscar Aguiar</span>
+        </div>
+        <div class="flex flex-row gap-8 w-64">   
+            <Image class="size-6" src={imageIg} alt="ig"/>
+            <Image class="size-6" src={imageYt} alt="yt"/>
+            <Image class="size-6" src={imageFc} alt="fc"/>
+        </div>
+        <div class="">
+            <span>
+                2024 
+            </span>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
