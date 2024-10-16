@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { Image } from 'astro:assets';
 import  imageEscudo from '../images/escudo-zouls.svg';
+import Plantilla from '../components/plantilla.astro';
 ---
 <Header/>
 <Layout title="ZoulsGaming">
@@ -15,8 +16,9 @@ import  imageEscudo from '../images/escudo-zouls.svg';
 			<h1 class="flex justify-center  text-8xl origin-bottom -rotate-12 text-blue-500">Gaming</h1>
 			</div>
 		</section>
-		<section id="plantilla">
+		<section id="plantilla"class="flex  justify-center items-center mt-10">
 			
+			<Plantilla/>
 		</section>
 	</main>
 </Layout>

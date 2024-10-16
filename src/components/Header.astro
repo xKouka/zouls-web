@@ -1,7 +1,7 @@
 ---
 
 import { Image } from 'astro:assets'
-import imageBlanquito from '../images/blanqito.png'
+import imageBlanquito from '../images/zouls-logo.svg';
 
 
 
@@ -10,12 +10,12 @@ import imageBlanquito from '../images/blanqito.png'
 <header class="bg-black">
     <div class="  font-extrabold flex justify-center items-center gap-24 text-xl w-screen h-24  ">
         <div id="primero"  class=" flex items-center h-24 w-28 justify-center  hover:border-t-4 border-blue-400 hover:text-blue-400">
-            <a href="">Inicio</a>
+            <a href="#inicio">Inicio</a>
         </div>
         <div class=" flex items-center h-24 w-28 justify-center hover:border-t-4 border-blue-400 hover:text-blue-400">
             <a href=""class=>Plantilla</a>
         </div>
-        <Image src={imageBlanquito} alt="blanquito" class="mt-28 size-40 "/>
+        <Image src={imageBlanquito} alt="blanquito" class="mt-32 size-40"/>
         <div class=" flex items-center h-24 w-28 justify-center  hover:border-t-4 border-blue-400 hover:text-blue-400">
             <a href="">Eventos</a>
         </div>
@@ -24,7 +24,7 @@ import imageBlanquito from '../images/blanqito.png'
         </div>
     </div>
 <div class="flex flex-row">
-    <div class="bg-white h-2 w-screen bg-gradient-to-r from-black to-white mt-1 "></div>
-    <div class="bg-white h-2 w-screen bg-gradient-to-l from-black to-white mt-1 "></div>
+    <div class="bg-white h-3 w-screen bg-gradient-to-r from-black to-white mt-2"></div>
+    <div class="bg-white h-3 w-screen bg-gradient-to-l from-black to-white mt-2"></div>
 </div>
 </header>   
