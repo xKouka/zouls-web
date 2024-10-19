@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import imageTele from "../../public/telephone.svg";
+import imageMail from "../../public/envelope.svg";
+import imageWeb from "../../public/wifi.svg"
+---
+<div class="flex flex-row gap-64 justify-center mt-28">
+    <div class="flex flex-col items-center gap-10">
+        <Image src={imageTele} alt="telephone" class="size-10" />
+        <span>+53 412-5308745</span>
+    </div>
+    <div class="flex flex-col items-center gap-10">
+        <Image src={imageMail} alt="Mail"class="size-10" />
+        <span>ZoulsGaming@gmail.com</span>
+    </div>
+    <div class="flex flex-col items-center gap-10">
+        <Image src={imageWeb} alt="Web" class="size-10" />
+        <a href="https://www.atom.bio/zouls">https://www.atom.bio/zouls</a>
+    </div>
+</div>

@@ -1,27 +1,45 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { Image } from 'astro:assets';
-import  imageEscudo from '../images/escudo-zouls.svg';
-import Plantilla from '../components/plantilla.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+import imageEscudo from "../../public/escudo-zouls.svg";
+import Plantilla from "../components/plantilla.astro";
+import Presentacion from "../components/Presentacion.astro";
+import Contacto from "../components/Contacto.astro";
 ---
-<Header/>
+
+<Header />
 <Layout title="ZoulsGaming">
-	<main>
-		<section id="inicio">
-			<Image class="flex items-center w-screen mt-40 size-96" src={imageEscudo} alt="escudo"/>
-			<div class="mt-32">
-			<h1 class="flex justify-center text-8xl origin-bottom -rotate-12 ">Zouls</h1>
-			<h1 class="flex justify-center  text-8xl origin-bottom -rotate-12 text-blue-500">Gaming</h1>
-			</div>
-		</section>
-		<section id="plantilla"class="flex  justify-center items-center mt-10">
-			
-			<Plantilla/>
-		</section>
-	</main>
+  <main>
+    <section id="inicio">
+      <Image
+        class="flex items-center w-screen mt-40 size-96"
+        src={imageEscudo}
+        alt="escudo"
+      />
+      <div class="mt-32">
+        <h1 class="flex justify-center text-8xl origin-bottom -rotate-12">
+          Zouls
+        </h1>
+        <h1
+          class="flex justify-center text-8xl origin-bottom -rotate-12 text-blue-500"
+        >
+          Gaming
+        </h1>
+      </div>
+    </section>
+    <section id="presentacion" class="flex flex-col items-center mt-28">
+      <h1 class="text-7xl text-blue-400">Jugadores</h1>
+      <Presentacion />
+    </section>
+    <section id="plantilla" class="flex justify-center items-center mt-10">
+      <Plantilla />
+    </section>
+    <section id="contacto" class="flex flex-col items-center mt-28">
+		<h1 class="text-7xl text-blue-400">Contacto</h1>
+      <Contacto />
+    </section>
+  </main>
 </Layout>
-<Footer/>
-
-
+<Footer />
